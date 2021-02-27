@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Img top -->
+  <link rel="icon" href="favicon.png">
+  <!-- Titlu -->
+  <title>Tyrol about</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Body -->
+  <style>
+    body{    
+      background-image: url("img/background2.jpg");
+    }
+    /* Animation */
+    .active-link {
+  -webkit-animation: bgcolorchange 60s infinite; /* Chrome, Safari, Opera */ 
+  animation: 60s infinite bgcolorchange; 
+   
+}
+@keyframes bgcolorchange {
+  0% {
+    background-image: url("img/background.jpg");
+  }
+  25% {
+    background-image: url("img/background2.jpg");
+  }
+  50% {
+    background-image: url("img/background3.jpg");
+  }
+  75% {
+    background-image: url("img/background4.jpg");
+  }
+  100% {
+    background-image: url("img/background5.jpg");
+  }
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+  </style>
+</head>
+<body class="active-link">
+
+<nav class="navbar navbar-expand-sm bg-light justify-content-between w-100 nav-fill w-100">
+  <ul class="navbar navbar-expand-sm bg-light justify-content-between w-100 nav-fill w-100" style="list-style: none;">
+    <li class="nav-item">
+      <a class="nav-link disable" style="font-size: 30px; color: black;" href="#">Learn</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disable" style="font-size: 30px; color: black;"  href="#">Community</a>
+    </li>
+  </ul>
+  
+  <a class="navbar-brand" href="#">
+    <img src="img/tyrol.png" alt="logo" style="width:100px; height: 60px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar navbar-expand-sm bg-light justify-content-between w-100 nav-fill w-100" style="list-style: none;">
+    <li class="nav-item">
+      <a class="nav-link disable" style="font-size: 30px; color: black;"  href="#">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disable" style="font-size: 30px; color: black;"  href="#">Login</a>
+    </li>
+  </ul>
+</nav>
+<br>
+<div class="container p-3 " style="background-color:rgba(255, 255, 255, 0.70); border-radius: 12.25px; border: 4.50px solid black;">
+  <h1>Despre</h1>
+  <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah<br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah<br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah<br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah<br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah<br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah<br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah<br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah <br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah<br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah<br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+</div>
+<div class="container p-3 my-1" style="background-color:rgba(255, 255, 255, 0.70); border-radius: 12.25px; border: 4.50px solid black;">
+  <h1>Bug Report</h1>
+  <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah<br/>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+</div>
+<div style="text-align:center">
+  <span class="dot" id="d1" onclick="changeColorDot(1);"></span>
+  <span class="dot" id="d2" onclick="changeColorDot(2);"></span>
+  <span class="dot" id="d3" onclick="changeColorDot(3);"></span>
+  <span class="dot" id="d4" onclick="changeColorDot(4);"></span>
+  <span class="dot" id="d5" onclick="changeColorDot(5);"></span>
+</div>
+<script>
+  //var intervalID = window.setInterval(myCallback, 1000);
+  let cycle = 0;
+  function changeColorDot(n){
+    for(let i = 1; i <= 5; i++){
+      document.getElementById("d"+i).style.backgroundColor = "#bbb"
+    }
+    /// 6E6E6E
+    document.getElementById("d"+n).style.backgroundColor = "#6E6E6E"
+  }
+  /*function myCallback() {
+    cycle++;
+    console.log(cycle);
+    if(cycle%5 == 1){
+      document.body.style.backgroundImage = "url('img/background.jpg')";
+    }
+    if(cycle%5 == 2){
+      document.body.style.backgroundImage = "url('img/background2.jpg')";
+    }
+    if(cycle%5 == 3){
+      document.body.style.backgroundImage = "url('img/background3.jpg')";
+    }
+    if(cycle%5 == 4){
+      document.body.style.backgroundImage = "url('img/background4.jpg')";
+    }
+    if(cycle%5 == 0){
+      document.body.style.backgroundImage = "url('img/background.jpg')";
+    }
+  }*/
+</script>
+</body>
+</html>
