@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dictionar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/topIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/logo" />
+
+        <RelativeLayout
+            android:id="@+id/cuvinte"
+            android:background="@drawable/layout_bg"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/topIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linie"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:fontFamily="@font/verdana"
+                            android:textSize="20dp"
+                            android:layout_centerInParent="true"
+                            android:text="Alfabet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <View
+                            android:layout_alignParentRight="true"
+                            android:background="@color/colorAccent"
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"/>
+
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:fontFamily="@font/verdana"
+                            android:textSize="20dp"
+                            android:layout_centerInParent="true"
+                            android:text="Dictionar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <View
+                            android:layout_alignParentRight="true"
+                            android:background="@color/colorAccent"
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"/>
+
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:fontFamily="@font/verdana"
+                            android:textSize="20dp"
+                            android:layout_centerInParent="true"
+                            android:text="Expresii"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_below="@id/linie"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/row1"
+                android:layout_below="@+id/linie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/alfabet"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="24dp"
+                            android:layout_height="49dp"
+                            android:fontFamily="@font/verdana"
+                            android:text="A"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="24dp"
+                            android:layout_height="49dp"
+                            android:fontFamily="@font/verdana"
+                            android:text="B"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="C"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="D"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="E"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="F"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="G"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="H"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="24dp"
+                        android:layout_height="49dp">
+
+                        <RelativeLayout
+                            android:layout_width="24dp"
+                            android:layout_height="49dp">
+
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="I"
+                            android:textSize="35dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="24dp"
+                        android:layout_height="49dp">
+
+                        <RelativeLayout
+                            android:layout_width="24dp"
+                            android:layout_height="49dp">
+
+                            <TextView
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/verdana"
+                                android:text="Î"
+                                android:textSize="35dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="24dp"
+                        android:layout_height="49dp">
+
+                        <RelativeLayout
+                            android:layout_width="24dp"
+                            android:layout_height="49dp">
+
+                            <TextView
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/verdana"
+                                android:text="J"
+                                android:textSize="35dp" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="K"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="L"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/verdana"
+                        android:text="M"
+                        android:textSize="35dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:id="@+id/row2"
+                android:layout_below="@+id/row1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/alfabet2"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="N"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="O"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="P"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="R"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="S"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="Ș"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="T"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_marginLeft="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="Ț"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="U"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="V"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/verdana"
+                            android:text="W"
+                            android:textSize="35dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/verdana"
+                            android:textSize="35dp"
+                            android:text="Y"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="@font/verdana"
+                            android:textSize="35dp"
+                            android:text="Z"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:background="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linie1"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/verdana"
+                    android:text="⚫A Adapta (1)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/linie2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linie1"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/verdana"
+                    android:text="⚫A Adapta (1)"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/linie2"
+                    android:id="@+id/linie3"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/verdana"
+                    android:text="⚫A Adapta (1)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/linie3"
+                    android:id="@+id/linie4"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/verdana"
+                    android:text="⚫A Adapta (1)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/linie5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linie4"
+                    android:layout_marginTop="-2dp"
+                    android:fontFamily="@font/verdana"
+                    android:text="⚫A Adapta (1)"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/linie5"
+                    android:id="@+id/linie6"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/verdana"
+                    android:text="⚫A Adapta (1)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/linie6"
+                    android:id="@+id/linie7"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/verdana"
+                    android:text="⚫A Adapta (1)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <Button
+                    android:id="@+id/sus"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/layout_bg"
+                    android:text="SUS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_below="@+id/sus"
+                    android:id="@+id/jos"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/layout_bg"
+                    android:text="JOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/cuvinte"
+            android:background="@drawable/layout_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:id="@+id/prev"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/verdana"
+                android:textSize="25dp"
+                android:text="Preview : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/prev"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:layout_constraintDimensionRatio="4:3" />
+
+            <View
+                android:id="@+id/liniuta"
+                android:layout_below="@id/video"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/liniuta"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:text="VITEZA X1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/layout_bg" />
+
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:text="VITEZA 0.5"
+                            android:background="@drawable/layout_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="50dp">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:text="VITEZA 0.25"
+                            android:background="@drawable/layout_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>
